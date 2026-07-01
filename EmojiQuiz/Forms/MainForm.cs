@@ -13,4 +13,11 @@ public partial class MainForm : Form
         gameForm.Show();
         this.Hide();
     }
+
+    private void buttonAdmin_Click(object sender, EventArgs e)
+    {
+        AdminForm adminForm = new AdminForm();
+        adminForm.Show();
+        this.Hide();
+    }
 }

@@ -30,7 +30,7 @@ partial class MainForm
     private void InitializeComponent()
     {
         buttonPlay = new System.Windows.Forms.Button();
-        button1 = new System.Windows.Forms.Button();
+        buttonAdmin = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // buttonPlay
@@ -43,27 +43,28 @@ partial class MainForm
         buttonPlay.UseVisualStyleBackColor = true;
         buttonPlay.Click += buttonPlay_Click;
         // 
-        // button1
+        // buttonAdmin
         // 
-        button1.Location = new System.Drawing.Point(358, 287);
-        button1.Name = "button1";
-        button1.Size = new System.Drawing.Size(118, 23);
-        button1.TabIndex = 1;
-        button1.Text = "Администратор";
-        button1.UseVisualStyleBackColor = true;
+        buttonAdmin.Location = new System.Drawing.Point(358, 287);
+        buttonAdmin.Name = "buttonAdmin";
+        buttonAdmin.Size = new System.Drawing.Size(118, 23);
+        buttonAdmin.TabIndex = 1;
+        buttonAdmin.Text = "Администратор";
+        buttonAdmin.UseVisualStyleBackColor = true;
+        buttonAdmin.Click += buttonAdmin_Click;
         // 
         // MainForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(800, 450);
-        Controls.Add(button1);
+        Controls.Add(buttonAdmin);
         Controls.Add(buttonPlay);
         Text = "Form1";
         ResumeLayout(false);
     }
 
-    private System.Windows.Forms.Button button1;
+    private System.Windows.Forms.Button buttonAdmin;
 
     private System.Windows.Forms.Button buttonPlay;
 
