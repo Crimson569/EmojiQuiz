@@ -31,11 +31,103 @@ partial class GameForm
     /// </summary>
     private void InitializeComponent()
     {
-        this.components = new System.ComponentModel.Container();
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(800, 450);
-        this.Text = "GameForm";
+        labelEmoji = new System.Windows.Forms.Label();
+        button1 = new System.Windows.Forms.Button();
+        button2 = new System.Windows.Forms.Button();
+        button3 = new System.Windows.Forms.Button();
+        button4 = new System.Windows.Forms.Button();
+        labelScore = new System.Windows.Forms.Label();
+        labelResult = new System.Windows.Forms.Label();
+        SuspendLayout();
+        // 
+        // labelEmoji
+        // 
+        labelEmoji.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        labelEmoji.Location = new System.Drawing.Point(360, 72);
+        labelEmoji.Name = "labelEmoji";
+        labelEmoji.Size = new System.Drawing.Size(100, 23);
+        labelEmoji.TabIndex = 0;
+        labelEmoji.Text = "label1";
+        // 
+        // button1
+        // 
+        button1.Location = new System.Drawing.Point(188, 147);
+        button1.Name = "button1";
+        button1.Size = new System.Drawing.Size(119, 65);
+        button1.TabIndex = 1;
+        button1.Text = "button1";
+        button1.UseVisualStyleBackColor = true;
+        button1.Click += button1_Click;
+        // 
+        // button2
+        // 
+        button2.Location = new System.Drawing.Point(497, 147);
+        button2.Name = "button2";
+        button2.Size = new System.Drawing.Size(112, 65);
+        button2.TabIndex = 2;
+        button2.Text = "button2";
+        button2.UseVisualStyleBackColor = true;
+        button2.Click += button2_Click;
+        // 
+        // button3
+        // 
+        button3.Location = new System.Drawing.Point(188, 295);
+        button3.Name = "button3";
+        button3.Size = new System.Drawing.Size(119, 52);
+        button3.TabIndex = 3;
+        button3.Text = "button3";
+        button3.UseVisualStyleBackColor = true;
+        button3.Click += button3_Click;
+        // 
+        // button4
+        // 
+        button4.Location = new System.Drawing.Point(534, 295);
+        button4.Name = "button4";
+        button4.Size = new System.Drawing.Size(94, 52);
+        button4.TabIndex = 4;
+        button4.Text = "button4";
+        button4.UseVisualStyleBackColor = true;
+        button4.Click += button4_Click;
+        // 
+        // labelScore
+        // 
+        labelScore.Location = new System.Drawing.Point(188, 73);
+        labelScore.Name = "labelScore";
+        labelScore.Size = new System.Drawing.Size(100, 23);
+        labelScore.TabIndex = 5;
+        labelScore.Text = "label1";
+        // 
+        // labelResult
+        // 
+        labelResult.Location = new System.Drawing.Point(546, 73);
+        labelResult.Name = "labelResult";
+        labelResult.Size = new System.Drawing.Size(100, 23);
+        labelResult.TabIndex = 6;
+        labelResult.Text = "label1";
+        // 
+        // GameForm
+        // 
+        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        ClientSize = new System.Drawing.Size(800, 450);
+        Controls.Add(labelResult);
+        Controls.Add(labelScore);
+        Controls.Add(button4);
+        Controls.Add(button3);
+        Controls.Add(button2);
+        Controls.Add(button1);
+        Controls.Add(labelEmoji);
+        Text = "GameForm";
+        ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Label labelEmoji;
+    private System.Windows.Forms.Button button1;
+    private System.Windows.Forms.Button button2;
+    private System.Windows.Forms.Button button3;
+    private System.Windows.Forms.Button button4;
+    private System.Windows.Forms.Label labelScore;
+    private System.Windows.Forms.Label labelResult;
 
     #endregion
 }
