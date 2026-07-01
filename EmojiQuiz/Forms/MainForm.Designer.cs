@@ -29,18 +29,28 @@ partial class MainForm
     /// </summary>
     private void InitializeComponent()
     {
+        buttonPlay = new System.Windows.Forms.Button();
         button1 = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
+        // buttonPlay
+        // 
+        buttonPlay.Location = new System.Drawing.Point(175, 283);
+        buttonPlay.Name = "buttonPlay";
+        buttonPlay.Size = new System.Drawing.Size(75, 23);
+        buttonPlay.TabIndex = 0;
+        buttonPlay.Text = "Играть";
+        buttonPlay.UseVisualStyleBackColor = true;
+        buttonPlay.Click += buttonPlay_Click;
+        // 
         // button1
         // 
-        button1.Location = new System.Drawing.Point(175, 283);
+        button1.Location = new System.Drawing.Point(358, 287);
         button1.Name = "button1";
-        button1.Size = new System.Drawing.Size(75, 23);
-        button1.TabIndex = 0;
-        button1.Text = "button1";
+        button1.Size = new System.Drawing.Size(118, 23);
+        button1.TabIndex = 1;
+        button1.Text = "Администратор";
         button1.UseVisualStyleBackColor = true;
-        button1.Click += button1_Click;
         // 
         // MainForm
         // 
@@ -48,11 +58,14 @@ partial class MainForm
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(800, 450);
         Controls.Add(button1);
+        Controls.Add(buttonPlay);
         Text = "Form1";
         ResumeLayout(false);
     }
 
     private System.Windows.Forms.Button button1;
+
+    private System.Windows.Forms.Button buttonPlay;
 
     #endregion
 }
